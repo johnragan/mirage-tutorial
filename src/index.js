@@ -11,9 +11,9 @@ if (
   process.env.NODE_ENV === "development" &&
   typeof makeServer === "function"
 ) {
-  makeServer(); // For people following the tutorial
+  makeServer();
 } else if (process.env.NODE_ENV === "production") {
-  makeFinalServer(); // For a live demo when deploying to Vercel
+  makeFinalServer();
 }
 
 ReactDOM.render(
